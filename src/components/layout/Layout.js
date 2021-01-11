@@ -9,8 +9,7 @@ import {
 } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Home from "../home/Home";
-import News from "../news/News";
-import Login from "../login/Login";
+import Contact from "../contact/Contact";
 
 function Layout() {
     return (
@@ -25,11 +24,8 @@ function Layout() {
                         <NavLink to='/' exact className='nav-link'>
                             Home
                         </NavLink>
-                        <NavLink to='/news' className='nav-link'>
-                            News
-                        </NavLink>
-                        <NavLink to='/login' className='nav-link'>
-                            Login
+                        <NavLink to='/contact' className='nav-link'>
+                            Contact
                         </NavLink>
                     </Nav>
                 </Navbar.Collapse>
@@ -37,8 +33,7 @@ function Layout() {
             <Container>
                 <Switch>
                     <Route path='/' exact component={Home} />
-                    <Route path='/news' component={News} />
-                    <Route path='/login' component={Login} />
+                    <Route path='/contact' component={Contact} />
                 </Switch>
             </Container>
         </Router>

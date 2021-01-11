@@ -1,12 +1,12 @@
 import React from "react";
 import Heading from "../layout/Heading";
-import LoginForm from "./Loginform";
+import ContactForm from "./Contactform";
 
 function Login() {
     return (
         <>
-            <Heading title='Login' />
-            <LoginForm />
+            <Heading title='Contact' />
+            <ContactForm />
         </>
     );
 }
