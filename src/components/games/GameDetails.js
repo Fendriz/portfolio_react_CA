@@ -39,11 +39,15 @@ function GameDetails() {
 
 	return (
 		<Row>
-			<Col md={6} className="detail-image">
-				<Image src={detail.background_image} roundedCircle />
-			</Col>
-			<Col>
+			<Col md={12} >
 				<h1>{detail.name}</h1>
+			</Col>
+			<Col md={12} className="detail-image">
+				
+				<Image src={detail.background_image} rounded  />
+			</Col>
+			<Col md={12}>
+				
 				<p>
 					<b>Description:</b> {detail.description_raw}
 				</p>

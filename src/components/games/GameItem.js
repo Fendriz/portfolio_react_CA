@@ -10,8 +10,8 @@ function GameItem({ id, title, image, rating,released }) {
 			<Card.Img variant="top" src={image} />
 			<Card.Body>
 				<Card.Title>{title}</Card.Title>
-				<Card.Text>{rating}</Card.Text>
-				<Card.Text>{released}</Card.Text>
+				<Card.Text>Rating: {rating}</Card.Text>
+				<Card.Text>Released: {released}</Card.Text>
 
 				<Link to={"game/" + id}>
 					<Button variant="secondary" block>

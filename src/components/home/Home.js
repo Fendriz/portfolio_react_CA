@@ -5,7 +5,7 @@ import Heading from "../layout/Heading";
 function Home() {
     return (
         <>
-            <Heading title='Home' />
+            <Heading title='Video Games' />
             <GameList />
                 
         </>
