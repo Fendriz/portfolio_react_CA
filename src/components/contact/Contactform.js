@@ -72,6 +72,7 @@ function ContactForm() {
                 
                 <Form.Control
                     as='textarea'
+                    rows={6}
                     name='mess'
                     placeholder='message'
                     ref={register}

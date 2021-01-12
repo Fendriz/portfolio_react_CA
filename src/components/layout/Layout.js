@@ -10,7 +10,7 @@ import {
 import Container from "react-bootstrap/Container";
 import Home from "../home/Home";
 import Contact from "../contact/Contact";
-import GameDetails from "../games/GameDetails";
+import GameDetails from "../games/gamedetails/GameDetails";
 
 
 function Layout() {
