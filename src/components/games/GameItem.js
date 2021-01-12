@@ -13,7 +13,7 @@ function GameItem({ id, title, image, rating,released }) {
 				<Card.Text>{rating}</Card.Text>
 				<Card.Text>{released}</Card.Text>
 
-				<Link to={"character/" + id}>
+				<Link to={"game/" + id}>
 					<Button variant="secondary" block>
 						View
 					</Button>
