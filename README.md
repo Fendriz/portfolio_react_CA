@@ -1,14 +1,4 @@
-# Module Assignment 3
-
-You can use a UI library for the assignment but you can also just use unstyled HTML. The focus is on creating components so how it looks is not important.
-
-Arrange your components in folders.
-
-### WebPage contains:
-
--   Homepage with heading/homepagecontent components
--   NewsPage with heading/NewsList components
--   LoginPage with heading/Loginform components, validates UserName and Password
+# Course Assignment
 
 ## Available Scripts
 
