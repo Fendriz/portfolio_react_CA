@@ -32,21 +32,11 @@ function GameDetails() {
         setDetail(getResult);
         setLoading(false);
 	}
-	
-	function onClick(){
-		if(showText===false)
-			setShowText(true);
-		else
-			setShowText(false);
-	}
 
 	if (loading) {
 		return <Spinner animation="border" className="spinner" />;
 	}
-	if(!loading){
-		console.log(detail);
-	}
-
+	
 	return (
 		<Row>
 			<Col md={12} className="details">
@@ -86,7 +76,7 @@ function GameDetails() {
 			</Col>
 			
 			<Col md={12} className="details">
-			<Button variant="secondary" block onClick={onClick}>
+			<Button variant="secondary" block onClick={() => setShowText(!showText)}>
 					Description
 					
 			</Button>
