@@ -1,25 +1,22 @@
 import React from "react";
-import  propTypes  from "prop-types";
 
-import { useDispatch,useSelector } from "react-redux";
-import Card from "react-bootstrap/esm/Card";
+import { useSelector } from "react-redux";
 
 function GameLiked() {
+  const likecards = useSelector((state) => state.LikeCards);
 
-    const likecards = useSelector(state => state.LikeCards);
-
-    return (
-        <div class="likedGames">
-            <div class="likedGames-title">
-                <p>Liked Cards:</p>
-            </div>
-            <div class="likedGames-games">{likecards.map(card => {
-                return(
-                    <li key={card.id}>{card.title}</li>
-                ) 
-            })}</div>
-        </div>
-    );
+  return (
+    <div class="likedGames">
+      <div class="likedGames-title">
+        <p>Liked Cards:</p>
+      </div>
+      <div class="likedGames-games">
+        {likecards.map((card) => {
+          return <li key={card.id}>{card.title}</li>;
+        })}
+      </div>
+    </div>
+  );
 }
 
 // Genres.propTypes = {
@@ -27,3 +24,4 @@ function GameLiked() {
 // }
 
 export default GameLiked;
+
